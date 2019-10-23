@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ReasonReact Todo</title>
+  <link href="//fonts.googleapis.com/css?family=Dosis:600&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url("//i.imgur.com/kUHAfJt.png");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+    }
+    h1 {
+      text-align: center;
+      width: 100%;
+      font-family: 'Dosis', sans-serif;
+      letter-spacing: 2px;
+    }
+    .todo-app {
+      background: #fff;
+      border-radius: 2px;
+      display: inline-block;
+      min-height: 300px;
+      max-height: 100%;
+      margin: 1rem;
+      position: relative;
+      width: 500px;
+      padding: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .todos {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .footer {
+      align-self: flex-end;
+      flex: 0 0 100%;
+      max-width: 100%;
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 30px 0px 10px 0px;
+    }
+
+    .input {
+      -webkit-font-smoothing: antialiased;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: .009375em;
+      box-sizing: border-box;
+      width: 50%;
+      height: 100%;
+      padding: 10px 8px 3px;
+      border: none;
+      border-bottom: 1px solid;
+      border-radius: 0;
+      background: none;
+      -webkit-appearance: none;
+      justify-self: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      font-family: 'Dosis', sans-serif;
+    }
+
+    .button {
+      display: inline;
+      border: 0;
+      font-size: 16px;
+      width: 100px;
+      height: 25px;
+      font-family: 'Dosis', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .add {
+      width: 50%;
+      display: block;
+      width: 30%;
+      margin-top: 5px;
+      height: 30px;
+      background: #C45529;
+      color: #fff;
+      border: 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+
+    .complete {
+      *background-color: #C0FFCB;
+      box-shadow: 0 1px 3px rgba(75,100,80,0.16), 0 1px 3px rgba(75,100,80.23);
+    }
+
+    .undo {
+      background-color: rgb(255, 254, 192);
+      width: 45px;
+      box-shadow: 0 1px 3px rgba(231, 199, 13), 0 1px 3px rgba(231, 199, 13);
+    }
+
+    .remove {
+      background-color: rgba(255,59,59,0.40);
+      width: 45px;
+      margin-right: 10px;
+      color: #000;
+      box-shadow: 0 1px 3px rgba(255, 59, 59), 0 1px 3px rgb(255, 59, 59);
+    }
+
+    .item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 5px;
+      display: flex;
+    }
+
+    .end {
+      margin-left:auto; 
+      margin-right:30px;
+    }
+
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="Index.js"></script>
+</body>
+
+</html>
